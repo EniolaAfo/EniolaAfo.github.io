@@ -2,15 +2,14 @@
 import { GoogleMap, Marker } from 'vue3-google-map'
 
 const center = { lat: 40.689247, lng: -74.044502 }
-
 </script>
 
- <template>
+<template>
   <GoogleMap
-  api-key="AIzaSyCDb_MADsid6GoRfTNaNqhcQwfk6EiF4XA"
-  style="width: 100%; height: 500px"
-  :center="center"
-  :zoom="15"
+    api-key="AIzaSyCDb_MADsid6GoRfTNaNqhcQwfk6EiF4XA"
+    style="width: 100%; height: 500px"
+    :center="center"
+    :zoom="10"
   >
     <Marker :options="{ position: center }" />
   </GoogleMap>
